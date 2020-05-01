@@ -1,16 +1,16 @@
 ﻿console.log("Task 1-1-1");
 console.log("-----------------------------");
 var a = 10;
+console.log(typeof a);
 var b = "javascript";
-var c = true;
-var d = 2.345;
-a = b;
-d = c;
-console.log(typeof a);
 console.log(typeof b);
+var c = true;
 console.log(typeof c);
+var d = 2.345;
 console.log(typeof d);
+a = b;
 console.log(typeof a);
+d = c;
 console.log(typeof d);
 
 console.log("\nTask 1-1-2");
@@ -33,4 +33,4 @@ console.log(4 == "4");
 console.log(new Array() == false);
 console.log(null == "null");
 console.log("" != false);
-console.log((3 < 2 && 2 != 3) || 3 > 4);
+console.log((3 < 2 && 2 != 3) || 3 > -4);

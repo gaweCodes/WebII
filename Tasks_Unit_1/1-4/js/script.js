@@ -34,7 +34,7 @@ function YatzyCube(id) {
     this.number = Math.floor(Math.random() * max) + min;
   };
 }
-const yatzyCubes = new Array(5);
+const yatzyCubes = [];
 for (let i = 0; i < 5; i++) {
   yatzyCubes.push(new YatzyCube(i + 1));
 }
@@ -49,10 +49,4 @@ yatzyCubes.forEach((cube) => {
   cube.roll();
 });
 
-console.log(
-  Object.keys(yatzyCubes)
-    .map((key) => {
-      return yatzyCubes[key].number;
-    })
-    .join(", ")
-);
+console.log(yatzyCubes.map((c) => c.number).join(", "));
