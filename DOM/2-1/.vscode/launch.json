@@ -8,7 +8,7 @@
       "type": "chrome",
       "request": "launch",
       "name": "Launch Chrome against localhost",
-      "url": "file:///C:/Users/Gabriel/source/repos/GitHub/WebII/Tasks_Unit_2/2-2/index.html",
+      "url": "file:///C:/Users/Gabriel/source/repos/GitHub/WebII/DOM/2-1/index.html",
       "webRoot": "${workspaceFolder}"
     }
   ]
