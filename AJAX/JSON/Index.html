@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aufgabe 4-1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script>
+      var jsonString =
+        '{"books": [ \
+    {"id":"978-3-7645-0564-96","title":"Helix","author":"Marc Elsberg","pages":648,"year":2016,"language":"Deutsch"}, \
+    {"id":"978-3-423-19904-9","title":"Selfies","author":"Jussi Alder Olsen","pages":576,"year":2018,"language":"Deutsch"}, \
+    {"id":"978-1-5011-8098-9","title":"The Ousdider","author":"Stephen King","pages":576,"year":2018,"language":"Englisch"}, \
+    {"id":"978-3-431-03999-3","title":"Origin","author":"Dan Brown","pages":672,"year":2017,"language":"Deutsch"},\
+    {"id":"978-3-404-17503-1","title":"Diabolus","author":"Dan Brown","pages":524,"year":2016,"language":"Deutsch"}, \
+    {"id":"978-3-404-15485-2","title":"Sakrileg","author":"Dan Brown","pages":624,"year":2006,"language":"Deutsch"} \
+  ]}';
+      const bookStore = JSON.parse(jsonString);
+      console.log(bookStore.books.length);
+      console.log(
+        bookStore.books.find((x) => x.id == "978-3-431-03999-3").title
+      );
+      console.log(
+        JSON.stringify(bookStore.books.find((x) => x.id == "978-3-431-03999-3"))
+      );
+      bookStore.books
+        .filter((x) => x.language == "Deutsch")
+        .forEach((x) => console.log(x.title));
+    </script>
+  </body>
+</html>
